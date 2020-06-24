@@ -1,0 +1,162 @@
+* { box-sizing: border-box; }
+
+	/*Général*/
+
+body {
+	width: 100%;
+	min-height: 100vh;
+	background-color: #F6FAFF;
+	font-family: 'Raleway', sans-serif;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+a {
+	color: white;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+
+	/*Haut de page*/
+#header {
+	width: 100%;
+	
+}
+
+#header {
+	z-index: 100;
+	background-color: #9EBCE7;
+	top: 0;
+}
+
+#header a img {
+	height: 60px;
+}
+
+h1 {
+	font-size: 1.5em;
+	color:#4D76AF;
+}
+
+	/*Menu de navigation*/
+
+.cache {
+	display: none;
+}
+
+/*.slidetoggle {display: none;}*/
+
+
+	/*Corps de la page*/
+
+#main {
+	align-items: center;
+}
+
+
+.option > div {
+	background: #CBDDF6;
+	height: 300px;
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	padding: 0;	
+}
+
+.places > div {
+	background-image: url("../img/lieux.jpg");
+	color: white;
+}
+
+.chara > div {
+	background-image: url("../img/personnage.jpg");
+	color: white;
+}
+
+.items > div {
+	background-image: url("../img/objet.jpg");
+
+}
+
+.races > div {
+	background-image: url("../img/race.jpg");
+	color: white;
+}
+
+.languages > div {
+	background-image: url("../img/langue.jpg");
+	color: white;
+}
+
+.creatures > div {
+	background-image: url("../img/creatures.jpg");
+	color: white;
+}
+
+.nations > div {
+	background-image: url("../img/nation.jpg");
+}
+
+.tech > div {
+	background-image: url("../img/technologie.jpg");
+}
+
+.maps > div {
+	background-image: url("../img/map.jpg");
+	color: white;
+}
+
+.places div, .chara div, .items div, .races div, .languages div, .creatures div, .nations div, .tech div, .maps div {
+	overflow: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	transition: 0.4s;
+}
+
+.places div:hover, .chara div:hover, .items div:hover, .races div:hover, .languages div:hover, .creatures div:hover, .nations div:hover, .tech div:hover, .maps div:hover {
+	box-shadow: 0px 0px 9px #aaa;
+	border: double 1px #aaa;
+}
+
+.places a, .chara a, .items a, .races a, .languages a, .creatures a, .nations a, .tech a, .maps a {
+	display: block;
+	height: 100%;
+}
+
+
+
+	/*Pied de page*/
+
+#corps {
+	margin-top: 78px;
+}
+
+#footer {
+	background-color: #9EBCE7;
+	width: 100%;
+	padding: 20px;
+}
+
+
+
+@media (min-width: 768px) {
+
+	#header {
+		/*padding: 30px;*/
+	}
+
+	#corps {
+		margin-top: 108px;
+	}
+	
+	#header a img {
+	height: 90px;
+}
+	
+}
